@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sucesso View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SucessoViewController" id="Y6W-OH-hqX" customClass="SucessoViewController" customModule="Moedas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZL-ps-2fZ">
+                                <rect key="frame" x="24" y="356" width="366" height="184"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Parabéns! 
+Você acabou de vender 100 USD - Dollar, totalizando 
+R$ 516,08</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.4941176471" green="0.82745098039999998" blue="0.12941176469999999" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="32" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eL-MZ-biy">
+                                <rect key="frame" x="131.5" y="783" width="151" height="39"/>
+                                <color key="backgroundColor" red="0.23529411764705882" green="0.55294117647058827" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="Z0p-nj-zua"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
+                                <state key="normal" title="HOME">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="botaoVoltarHome:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="puR-og-g3p"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sZL-ps-2fZ" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="MBa-hd-pyW"/>
+                            <constraint firstItem="7eL-MZ-biy" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="WG5-6j-k1G"/>
+                            <constraint firstItem="sZL-ps-2fZ" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="cGx-5d-6EB"/>
+                            <constraint firstItem="sZL-ps-2fZ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="f5V-Df-5MR"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="sZL-ps-2fZ" secondAttribute="trailing" constant="24" id="kSj-NQ-jfD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="7eL-MZ-biy" secondAttribute="bottom" constant="40" id="tzg-r5-aDW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="homeBotao" destination="7eL-MZ-biy" id="mtU-pC-rg1"/>
+                        <outlet property="labelSucesso" destination="sZL-ps-2fZ" id="EPB-j2-IJt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="76"/>
+        </scene>
+    </scenes>
+</document>

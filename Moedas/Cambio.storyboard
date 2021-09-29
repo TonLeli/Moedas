@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cambio View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CambioViewController" id="Y6W-OH-hqX" customClass="CambioViewController" customModule="Moedas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cQh-dY-Frd">
+                                <rect key="frame" x="24" y="24" width="327" height="166.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0,53%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFh-jz-ASv">
+                                        <rect key="frame" x="16" y="54" width="295" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                        <color key="textColor" red="0.49411764705882355" green="0.82745098039215681" blue="0.12941176470588234" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD - Dollar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mJ-BU-i0c">
+                                        <rect key="frame" x="16" y="15" width="295" height="25"/>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compra: R$ 5,175" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTL-I6-8Br">
+                                        <rect key="frame" x="16" y="95.5" width="295" height="18"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Venda: R$ 5,1608" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiP-8V-hAR">
+                                        <rect key="frame" x="16" y="128.5" width="295" height="18"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="tiP-8V-hAR" secondAttribute="bottom" constant="20" id="5RJ-Ti-EfP"/>
+                                    <constraint firstItem="tiP-8V-hAR" firstAttribute="top" secondItem="hTL-I6-8Br" secondAttribute="bottom" constant="15" id="6iW-mZ-xaK"/>
+                                    <constraint firstItem="7mJ-BU-i0c" firstAttribute="top" secondItem="cQh-dY-Frd" secondAttribute="top" constant="15" id="8gK-mU-21l"/>
+                                    <constraint firstItem="bFh-jz-ASv" firstAttribute="top" secondItem="7mJ-BU-i0c" secondAttribute="bottom" constant="14" id="9Ms-6j-W7K"/>
+                                    <constraint firstItem="hTL-I6-8Br" firstAttribute="top" secondItem="bFh-jz-ASv" secondAttribute="bottom" constant="19" id="BOV-W6-xrl"/>
+                                    <constraint firstItem="bFh-jz-ASv" firstAttribute="leading" secondItem="cQh-dY-Frd" secondAttribute="leading" constant="16" id="asA-dE-ege"/>
+                                    <constraint firstAttribute="trailing" secondItem="tiP-8V-hAR" secondAttribute="trailing" constant="16" id="bQ8-VN-9ck"/>
+                                    <constraint firstAttribute="trailing" secondItem="7mJ-BU-i0c" secondAttribute="trailing" constant="16" id="cPb-Uy-Q8e"/>
+                                    <constraint firstAttribute="trailing" secondItem="bFh-jz-ASv" secondAttribute="trailing" constant="16" id="m1b-hK-sYf"/>
+                                    <constraint firstItem="7mJ-BU-i0c" firstAttribute="leading" secondItem="cQh-dY-Frd" secondAttribute="leading" constant="16" id="r52-Jr-MjK"/>
+                                    <constraint firstItem="hTL-I6-8Br" firstAttribute="leading" secondItem="cQh-dY-Frd" secondAttribute="leading" constant="16" id="tsW-nw-ufF"/>
+                                    <constraint firstItem="tiP-8V-hAR" firstAttribute="leading" secondItem="cQh-dY-Frd" secondAttribute="leading" constant="16" id="xKW-Nh-7t1"/>
+                                    <constraint firstAttribute="trailing" secondItem="hTL-I6-8Br" secondAttribute="trailing" constant="16" id="yy1-SE-VdQ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saldo disponível: R$ 1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fe8-0J-Pbs">
+                                <rect key="frame" x="24" y="222.5" width="327" height="27"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 Dollar em caixa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RU6-8z-64a">
+                                <rect key="frame" x="24" y="273.5" width="327" height="27"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F3o-Pb-vOQ">
+                                <rect key="frame" x="24" y="332.5" width="327" height="54"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Quantidade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6KU-H2-UeA">
+                                        <rect key="frame" x="10" y="5" width="312" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" systemColor="systemGrayColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="6KU-H2-UeA" firstAttribute="leading" secondItem="F3o-Pb-vOQ" secondAttribute="leading" constant="10" id="DtD-ub-3xn"/>
+                                    <constraint firstAttribute="height" constant="54" id="RTK-xW-NA1"/>
+                                    <constraint firstItem="6KU-H2-UeA" firstAttribute="top" secondItem="F3o-Pb-vOQ" secondAttribute="top" constant="5" id="l1O-5W-ckY"/>
+                                    <constraint firstAttribute="bottom" secondItem="6KU-H2-UeA" secondAttribute="bottom" constant="5" id="pn4-QR-Kcg"/>
+                                    <constraint firstAttribute="trailing" secondItem="6KU-H2-UeA" secondAttribute="trailing" constant="5" id="t1p-Vk-InD"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pF7-S4-9te">
+                                <rect key="frame" x="24" y="584" width="151" height="43"/>
+                                <color key="backgroundColor" red="0.23529411764705882" green="0.55294117647058827" blue="0.73725490196078436" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="IW1-6e-FFz"/>
+                                    <constraint firstAttribute="width" constant="151" id="n6t-GI-EPS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
+                                <state key="normal" title="VENDER">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="botaoVender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0Wm-ce-Rrn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HeW-2h-ugf">
+                                <rect key="frame" x="200" y="584" width="151" height="43"/>
+                                <color key="backgroundColor" red="0.23529411764705882" green="0.55294117647058827" blue="0.73725490196078436" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="078-m6-pXH"/>
+                                    <constraint firstAttribute="height" constant="43" id="XeI-KE-HPg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
+                                <state key="normal" title="COMPRAR">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="botaoComprar:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="qPy-Hf-U5O"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Fe8-0J-Pbs" secondAttribute="trailing" constant="24" id="2OY-b6-GNH"/>
+                            <constraint firstItem="Fe8-0J-Pbs" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="7Hg-BS-nig"/>
+                            <constraint firstItem="RU6-8z-64a" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="Auk-vM-kNw"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="F3o-Pb-vOQ" secondAttribute="trailing" constant="24" id="Cnn-Jr-O0Q"/>
+                            <constraint firstAttribute="bottom" secondItem="HeW-2h-ugf" secondAttribute="bottom" constant="40" id="E7s-rT-3Ac"/>
+                            <constraint firstItem="pF7-S4-9te" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="24" id="JAH-13-5E5"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="cQh-dY-Frd" secondAttribute="trailing" constant="24" id="JdI-i6-kwj"/>
+                            <constraint firstItem="cQh-dY-Frd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="KVs-un-44e"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="RU6-8z-64a" secondAttribute="trailing" constant="24" id="RE6-Vi-Ok9"/>
+                            <constraint firstAttribute="bottom" secondItem="pF7-S4-9te" secondAttribute="bottom" constant="40" id="SCA-1h-cYb"/>
+                            <constraint firstItem="cQh-dY-Frd" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="24" id="d5H-sT-3OX"/>
+                            <constraint firstItem="HeW-2h-ugf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pF7-S4-9te" secondAttribute="trailing" constant="25" id="dU1-bo-ycV"/>
+                            <constraint firstAttribute="trailing" secondItem="pF7-S4-9te" secondAttribute="trailing" constant="219" id="g6i-NP-goC"/>
+                            <constraint firstAttribute="trailing" secondItem="HeW-2h-ugf" secondAttribute="trailing" constant="24" id="ogS-yc-rvx"/>
+                            <constraint firstItem="Fe8-0J-Pbs" firstAttribute="top" secondItem="cQh-dY-Frd" secondAttribute="bottom" constant="32" id="q6B-Rs-G08"/>
+                            <constraint firstItem="F3o-Pb-vOQ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="uVn-X3-gkZ"/>
+                            <constraint firstItem="F3o-Pb-vOQ" firstAttribute="top" secondItem="RU6-8z-64a" secondAttribute="bottom" constant="32" id="wbh-bd-HRK"/>
+                            <constraint firstItem="RU6-8z-64a" firstAttribute="top" secondItem="Fe8-0J-Pbs" secondAttribute="bottom" constant="24" id="zw5-au-ygK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="p1e-Id-ItB"/>
+                    <connections>
+                        <outlet property="botaoComprar" destination="HeW-2h-ugf" id="G9Q-rF-pKY"/>
+                        <outlet property="botaoVender" destination="pF7-S4-9te" id="noJ-tU-duk"/>
+                        <outlet property="containerMoeda" destination="cQh-dY-Frd" id="gZl-2c-P5Y"/>
+                        <outlet property="containerQuantidade" destination="F3o-Pb-vOQ" id="C3I-bQ-pKh"/>
+                        <outlet property="moeda" destination="7mJ-BU-i0c" id="8qF-ld-DvM"/>
+                        <outlet property="moedaCaixa" destination="RU6-8z-64a" id="RlS-Ub-3kS"/>
+                        <outlet property="porcentagem" destination="bFh-jz-ASv" id="Qc6-7G-vqw"/>
+                        <outlet property="quantidade" destination="6KU-H2-UeA" id="AN2-2y-Hhz"/>
+                        <outlet property="saldo" destination="Fe8-0J-Pbs" id="oOL-Jo-Q2Z"/>
+                        <outlet property="valorDeCompra" destination="hTL-I6-8Br" id="wR5-zG-gXg"/>
+                        <outlet property="valorDeVenda" destination="tiP-8V-hAR" id="S7Y-hg-YUb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-554" y="83"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
